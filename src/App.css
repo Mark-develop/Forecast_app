@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+input[type="text"]::selection {background: rgba(204, 204, 204, 0.2);}
+input[type="text"]::-moz-selection {background: rgba(204, 204, 204, 0.2);}
+input[type="text"]::-webkit-selection {background: rgba(204, 204, 204, 0.2); color:rgba(204, 204, 204, 0.2);}
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main{
+  height: 50vh;
+  width: 800px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.55);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.info {
+  height: 50vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form {
+  height: 50vh;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding-bottom: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: lighter;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  padding: 7px 30px;
+  margin: 0 2px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(89, 102, 126, 0.35);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.095);
+  cursor: pointer;
+  color: #ffffffcc;
+  outline: none !important;
+  transition: background-color 0.1s ease-in;
+
+}
+
+button:hover {
+  background-color: rgba(89, 102, 126, 0.55);
+}
+
+button:active {
+  border-bottom: 2px solid transparent;
+  border-color: transparent;
+}
+
+.infoWeath {
+  width: 60%;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.error {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
